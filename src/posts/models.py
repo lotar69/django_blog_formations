@@ -10,9 +10,9 @@ User = get_user_model()
 class BlogPost(models.Model):
     title = models.CharField(max_length=255, unique=True, verbose_name="Titre")
     slug = models.SlugField(max_length=255, unique=True, blank=True)
-    author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, verbose_name="Auteur")
     last_updated = models.DateTimeField(auto_now=True)
-    created_on = models.DateField(blank=True, null=True)
+    created_on = models.DateField(blank=True, null=True, verbose_name="Créé le")
     published = models.BooleanField(default=False, verbose_name="publié")
     content = models.TextField(blank=True, verbose_name="contenu")
 

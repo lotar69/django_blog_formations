@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    background-color:mintcream;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px auto;
+    padding: 5px 20px 20px 20px;
+    width:50%;
+}
+
+form>textarea{
+    resize: none;
+    width: 100%;
+}
+
+form>input, form>textarea, form>select{
+    display: block;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+border-radius: 5px;
+}
+
+article {
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 5px 20px 20px 20px;
+    width: 80%;
+    background-color: #e8f0ec;
+    box-shadow: #b5bdb9 3px 6px 15px 1px;
+
+}
+
+.texte-article{
+    /* width: 90%; */
+    text-align: justify;
+    margin: 0 0 20px 0;
+}
+
+.modif{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.modif>a{
+    margin-right: 10px;
+}
+
+.lecture{
+    border: 3px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: #e8f0ec;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 6px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.titre-article{
+    margin-bottom: 4px;
+}
+
+.date-article{
+    margin-top: 4px;
+}
+
+.suppression{
+    margin-top: 50vh;
+    transform: translateY(-194%);
+}
