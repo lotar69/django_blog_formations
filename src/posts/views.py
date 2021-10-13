@@ -23,7 +23,7 @@ class BlogPostCreate(CreateView):
     model = BlogPost
     template_name = "posts/blogpost_create.html"
     fields = ["title", "content", "published", "author", "created_on", ]
-
+    
 class BlogPostUpdate(UpdateView):
     model = BlogPost
     template_name = "posts/blogpost_edit.html"
