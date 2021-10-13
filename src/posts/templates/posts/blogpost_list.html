@@ -6,7 +6,7 @@
 
 {% block content %}
 
-    <h1>Le blog des Formations</h1>
+    <h1 class="titre">Le blog des Formations</h1>
     {% for post in posts %}
     <article>
         {% if request.user.is_authenticated %}
@@ -16,7 +16,7 @@
             </div>
         {% endif %}
         <h2 class="titre-article">{{ post.title }}</h2>
-        <h5 class="date-article">Publié par <i>{{ post.author_or_default}} </i> le {{ post.created_on|date:'j F Y' }}</h5>
+        <h5 class="date-article">Publié par <i class="auteur">{{ post.author_or_default}} </i> le {{ post.created_on|date:'j F Y' }}</h5>
 
 
       

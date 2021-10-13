@@ -18,6 +18,9 @@ nav{
     justify-content: space-evenly;
     padding: 10px;
 }
+.titre{
+    font-size: 4em;
+}
 section{
     display: flex;
     flex-direction: column;
